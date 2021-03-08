@@ -29,8 +29,8 @@ int main(int argc, char **argv)
 	/* Structure containing single dbpf archive information. */
 	dbpf_archive dbpf;
 
-	/* Read the archive from file. A buffer will be dynamically allocated for the archive content. */
-	dbpf_ret retVal = dbpf_init(&dbpf, "Birba32_FY_Belinda shorts.package");
+	/* Read the archive from example.package file. A buffer will be dynamically allocated for the archive content. */
+	dbpf_ret retVal = dbpf_init(&dbpf, "example.package");
 
 	if (DBPF_E_OK == retVal)
 	{
